@@ -1,0 +1,9 @@
+c:\users\user\documents\visual studio 2015\Projects\Patient_Accounting_System\Patient_Accounting_System\bin\Debug\Patient_Accounting_System.exe.config
+c:\users\user\documents\visual studio 2015\Projects\Patient_Accounting_System\Patient_Accounting_System\bin\Debug\Patient_Accounting_System.exe
+c:\users\user\documents\visual studio 2015\Projects\Patient_Accounting_System\Patient_Accounting_System\bin\Debug\Patient_Accounting_System.pdb
+c:\users\user\documents\visual studio 2015\Projects\Patient_Accounting_System\Patient_Accounting_System\obj\Debug\Patient_Accounting_System.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\Patient_Accounting_System\Patient_Accounting_System\obj\Debug\Patient_Accounting_System.Form1.resources
+c:\users\user\documents\visual studio 2015\Projects\Patient_Accounting_System\Patient_Accounting_System\obj\Debug\Patient_Accounting_System.Properties.Resources.resources
+c:\users\user\documents\visual studio 2015\Projects\Patient_Accounting_System\Patient_Accounting_System\obj\Debug\Patient_Accounting_System.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2015\Projects\Patient_Accounting_System\Patient_Accounting_System\obj\Debug\Patient_Accounting_System.exe
+c:\users\user\documents\visual studio 2015\Projects\Patient_Accounting_System\Patient_Accounting_System\obj\Debug\Patient_Accounting_System.pdb

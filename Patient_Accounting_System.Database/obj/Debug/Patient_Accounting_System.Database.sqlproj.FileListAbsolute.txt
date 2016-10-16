@@ -1,0 +1,5 @@
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Database\bin\Debug\Patient_Accounting_System.Database.dacpac
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Database\bin\Debug\Patient_Accounting_System.Database.dll
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Database\bin\Debug\Patient_Accounting_System.Database.pdb
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Database\obj\Debug\Patient_Accounting_System.Database.dll
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Database\obj\Debug\Patient_Accounting_System.Database.pdb

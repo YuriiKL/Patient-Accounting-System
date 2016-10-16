@@ -1,0 +1,5 @@
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Entities\bin\Release\Patient_Accounting_System.Entities.dll.config
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Entities\bin\Release\Patient_Accounting_System.Entities.dll
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Entities\bin\Release\Patient_Accounting_System.Entities.pdb
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Entities\obj\Release\Patient_Accounting_System.Entities.dll
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Entities\obj\Release\Patient_Accounting_System.Entities.pdb

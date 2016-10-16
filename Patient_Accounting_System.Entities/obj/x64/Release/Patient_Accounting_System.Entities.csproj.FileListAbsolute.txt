@@ -1,0 +1,6 @@
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Entities\bin\x64\Release\Patient_Accounting_System.Entities.dll.config
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Entities\bin\x64\Release\Patient_Accounting_System.Entities.dll
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Entities\bin\x64\Release\Patient_Accounting_System.Entities.pdb
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Entities\obj\x64\Release\Patient_Accounting_System.Entities.csprojResolveAssemblyReference.cache
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Entities\obj\x64\Release\Patient_Accounting_System.Entities.dll
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Entities\obj\x64\Release\Patient_Accounting_System.Entities.pdb

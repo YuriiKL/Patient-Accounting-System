@@ -1,0 +1,16 @@
+C:\Users\user\Documents\Visual Studio 2015\Projects\Patient_Accounting_System\Patient_Accounting_System.Repositories\bin\Debug\Patient_Accounting_System.Repositories.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\Patient_Accounting_System\Patient_Accounting_System.Repositories\bin\Debug\Patient_Accounting_System.Repositories.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\Patient_Accounting_System\Patient_Accounting_System.Repositories\bin\Debug\Patient_Accounting_System.Entities.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\Patient_Accounting_System\Patient_Accounting_System.Repositories\bin\Debug\Patient_Accounting_System.Entities.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\Patient_Accounting_System\Patient_Accounting_System.Repositories\obj\Debug\Patient_Accounting_System.Repositories.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\Patient_Accounting_System\Patient_Accounting_System.Repositories\obj\Debug\Patient_Accounting_System.Repositories.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\Patient_Accounting_System\Patient_Accounting_System.Repositories\obj\Debug\Patient_Accounting_System.Repositories.pdb
+C:\Users\user\documents\visual studio 2015\Projects\Patient_Accounting_System\Patient_Accounting_System.Repositories\bin\Debug\Patient_Accounting_System.Repositories.dll.config
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Repositories\bin\Debug\Patient_Accounting_System.Repositories.dll.config
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Repositories\bin\Debug\Patient_Accounting_System.Repositories.dll
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Repositories\bin\Debug\Patient_Accounting_System.Repositories.pdb
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Repositories\bin\Debug\Patient_Accounting_System.Entities.dll
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Repositories\bin\Debug\Patient_Accounting_System.Entities.pdb
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Repositories\obj\Debug\Patient_Accounting_System.Repositories.csprojResolveAssemblyReference.cache
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Repositories\obj\Debug\Patient_Accounting_System.Repositories.dll
+C:\Users\user\Dropbox\Projects\Patient_Accounting_System\Patient_Accounting_System.Repositories\obj\Debug\Patient_Accounting_System.Repositories.pdb
