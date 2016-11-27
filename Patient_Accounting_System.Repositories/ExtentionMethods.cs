@@ -15,6 +15,8 @@ namespace Patient_Accounting_System.Repositories
             {
                 if (string.Equals(reader.GetName(i), columnName, StringComparison.OrdinalIgnoreCase))
                 {
+                    // Review TK: I would just write 
+                    // return string.Equals(reader.GetName(i), columnName, StringComparison.OrdinalIgnoreCase)
                     return true;
                 }
             }

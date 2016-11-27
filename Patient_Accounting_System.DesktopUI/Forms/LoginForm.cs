@@ -16,6 +16,11 @@ namespace Patient_Accounting_System.DesktopUI.Forms
 {
     public partial class LoginForm : Form
     {
+        // Review TK: It is a good practice to use Dependency injection.
+        // I mean to add field of IRepository type and initialize it within constructor.
+        // I would create IHashService and class MD5Hash and inject it into repository.
+        // It would be great if you passed password in repository and encode it within repository.
+        // I don't see where you save the current user.
         public LoginForm()
         {
             InitializeComponent();

@@ -119,6 +119,7 @@ namespace Patient_Accounting_System.DesktopUI
         public static void UIThreadException(object sender, ThreadExceptionEventArgs t)
         {
             DialogResult result = DialogResult.Cancel;
+            // Review TK: Following constructions are a little bit strange.
             try
             {
                 result = ShowThreadExceptionDialog("Windows Forms Error", t.Exception);

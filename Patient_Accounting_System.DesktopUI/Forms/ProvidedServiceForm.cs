@@ -13,6 +13,7 @@ using System.Configuration;
 using System.Globalization;
 using Patient_Accounting_System.DesktopUI.Code;
 
+// Review TK: Please remove unused usings.
 namespace Patient_Accounting_System.DesktopUI.Forms
 {
     public partial class ProvidedServiceForm : Form
@@ -22,6 +23,7 @@ namespace Patient_Accounting_System.DesktopUI.Forms
         private Patient _selectedPatient;
         private Doctor _selectedDoctor;
         private Service _selectedService;
+        // Review TK: If you initialize field only within constructor you can use readonly modifier.
         private ProvidedService _providedService;
         private bool _needUpdate;
         private bool _isEditable;
@@ -204,6 +206,7 @@ namespace Patient_Accounting_System.DesktopUI.Forms
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
+            // Review TK: You could move strings into resources.
             if (DialogResult.Yes == MessageBox.Show("Delete current provided service?", "Delete provided service", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
                 var sqlPreviouslyProvidedService = new SqlPreviouslyProvidedServiceRepository(ConnectionString);

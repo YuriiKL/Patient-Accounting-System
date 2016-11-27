@@ -13,6 +13,8 @@ namespace Patient_Accounting_System.DesktopUI.Code
         {
             var text = comboBox.Text;
 
+            // Review TK: You could write dataSource.Any()
+            // It seems else statement isn't needed
             if (dataSource.Count() > 0)
             {
                 comboBox.DataSource = dataSource;

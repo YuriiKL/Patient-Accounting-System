@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Patient_Accounting_System.Repositories
 {
+
     public static class StoredProcedureNames
     {
+        // Review TK: Please take into consideration naming for public constant fields.
         public const string spGetUserByLogin = "spGetUser";
         public const string spAddNewPatient = "spAddNewPatient";
         public const string spAddNewProvidedService = "spAddNewProvidedService";

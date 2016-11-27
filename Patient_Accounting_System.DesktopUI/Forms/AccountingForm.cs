@@ -15,6 +15,10 @@ namespace Patient_Accounting_System.DesktopUI.Forms
 {
     public partial class AccountingForm : Form
     {
+        // Review TK: Please use more appropriate names for private fields
+        // From my point of view it would be nice to read connection within constructor.
+        // In my opinion it would be great to have such private field as ISqlAccountingProvidedServiceRepository
+        // and then use the specific class within constructor.
         private readonly string ConnectionString = ConfigurationManager.ConnectionStrings["PatientAccountingSystem"].ConnectionString;
 
         public AccountingForm()
@@ -102,9 +106,12 @@ namespace Patient_Accounting_System.DesktopUI.Forms
             List<AccountingProvidedService> accountingProvidedServices = sqlAccountingProvidedServiceRepository
                 .GetDoctorAccountingInformation(fromDateTimePicker.Value, toDateTimePicker.Value).ToList();
 
+            // Review TK: You could try to avoid using dublication of code.
+            // Since you perform the same actions with accountingProvidedServicesDataGridView.
             DataGridViewButtonColumn detailsButton = new DataGridViewButtonColumn();
             detailsButton.UseColumnTextForButtonValue = true;
             detailsButton.Text = "Show details";
+
             accountingProvidedServicesDataGridView.DataSource = accountingProvidedServices;
 
             SetDataGridViewColumns();
@@ -158,6 +165,9 @@ namespace Patient_Accounting_System.DesktopUI.Forms
         {
             var senderGrid = (DataGridView)sender;
 
+            // Review TK: I would write 
+            // if (!(senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn) || e.RowIndex < 0) return;
+            // You use a lot of if statements.
             if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
             {
                 int doctorId = Convert.ToInt32(senderGrid[senderGrid.Columns["DoctorId"].Index, e.RowIndex].Value);

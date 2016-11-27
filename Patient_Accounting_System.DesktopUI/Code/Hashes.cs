@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Patient_Accounting_System.DesktopUI.Code
 {
+    // Review TK: It is a good practice to set access modifier before class
+    // I would prefer to use hashing as service but not static method
+    // For example, you could create interface IHashService and implementation MD5HashService
     class Hashes
     {
         public static string GetMD5Hash(string text)

@@ -14,6 +14,7 @@ namespace Patient_Accounting_System.Repositories
         public static User ParseUser(SqlDataReader reader)
         {
             User user = new User();
+            // Review TK: I would prefer to skip IFs, I would just write some generic extension methods.
             if (reader.ColumnExists("Id"))
             {
                 user.Id = reader["Id"] is DBNull
@@ -142,6 +143,14 @@ namespace Patient_Accounting_System.Repositories
 
         public static ProvidedService ParseProvidedService(SqlDataReader reader)
         {
+            // Review TK: I would just write
+            //    var providerService = new ProvidedService
+            //    {
+            //        DoctorFirstName = reader["DoctorFirstName"] is DBNull
+            //        ? String.Empty
+            //        : reader["DoctorFirstName"].ToString(),
+            //        // rest of code
+            //}
             ProvidedService providedService = new ProvidedService();
 
             if (reader.ColumnExists("ProvidedServiceId"))

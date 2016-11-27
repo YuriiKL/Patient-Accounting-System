@@ -16,6 +16,7 @@ namespace Patient_Accounting_System.DesktopUI.Forms
 {
     public partial class PatientForm : Form
     {
+        // Review TK: Naming for private fields.
         private readonly string ConnectionString = ConfigurationManager.ConnectionStrings["PatientAccountingSystem"].ConnectionString;
 
         // According to ISO 5218 standart
@@ -42,6 +43,7 @@ namespace Patient_Accounting_System.DesktopUI.Forms
             _currentPatient = new SqlPatientRepository(ConnectionString).GetPatientById(patientId);
             notesTextBox.ReadOnly = true;
             _updateMode = true;
+            // Review TK: Use const or resources for strings.
             addPatientButton.Text = "Update patient information";
             addPatientButton.Visible = false;
             selectPatientComboBox.Visible = true;
@@ -74,7 +76,9 @@ namespace Patient_Accounting_System.DesktopUI.Forms
 
             var today = DateTime.Today;
             int age = today.Year - _currentPatient.BirthDate.Year;
+            //Review TK: Use {} with if.
             if (_currentPatient.BirthDate > today.AddYears(-age)) age--;
+            //Review TK: Why didn't you use string interpolation.
             patientBirthDateLbl.Text = _currentPatient.BirthDate.ToShortDateString() + " (" + age + " years)";
 
             notesTextBox.Text = _currentPatient.Notes;
@@ -150,6 +154,8 @@ namespace Patient_Accounting_System.DesktopUI.Forms
             if (String.IsNullOrWhiteSpace(phoneNumberTextBox.Text) || String.IsNullOrWhiteSpace(lastNameTextBox.Text) || 
                 String.IsNullOrWhiteSpace(firstNameTextBox.Text) || sexComboBox.SelectedIndex == -1)
             {
+                // Review TK: Why did you decide to throw exception in this case?
+                // I would prefer to use bool variable or something like that.
                 throw new ArgumentException();
             }
         }
@@ -177,6 +183,7 @@ namespace Patient_Accounting_System.DesktopUI.Forms
         private void comboBox_KeyUp(object sender, KeyEventArgs e)
         {
             var comboBox = (sender as ComboBox);
+            // Review TK: Again a lot of if statement.
             if (e.KeyCode == Keys.Back)
             {
                 int stringStart = comboBox.SelectionStart;
@@ -198,6 +205,7 @@ namespace Patient_Accounting_System.DesktopUI.Forms
 
         private void comboBox_KeyDown(object sender, KeyEventArgs e)
         {
+            // Review TK: Please try to use other constructions. I mean ternary operator.
             if (e.KeyCode == Keys.Back)
             {
                 _needUpdate = false;
@@ -266,6 +274,7 @@ namespace Patient_Accounting_System.DesktopUI.Forms
                 ValidatePatientFields();
                 SetPatientValuesFromEditContorls();
 
+                // Review TK: Ternary operator.
                 if (_updateMode)
                 {
                     queryResult = sqlPatientRepository.UpdatePatient(_currentPatient);
@@ -282,6 +291,7 @@ namespace Patient_Accounting_System.DesktopUI.Forms
                 }
 
             }
+            // Review TK: It seems strange.
             catch
             {
             }

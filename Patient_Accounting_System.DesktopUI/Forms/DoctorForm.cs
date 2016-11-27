@@ -18,6 +18,7 @@ namespace Patient_Accounting_System.DesktopUI.Forms
     {
         private List<Doctor> _suggestedDoctors;
         private Doctor _currentDoctor;
+        // Review TK: Why do you use different approach for naming private fields.
         public readonly string ConnectionString = ConfigurationManager.ConnectionStrings["PatientAccountingSystem"].ConnectionString;
         private List<ProvidedService> _recentProvidedServices;
         private bool _needUpdate;
@@ -26,10 +27,12 @@ namespace Patient_Accounting_System.DesktopUI.Forms
         {
             InitializeComponent();
         }
+        // Review TK: Please take into consideration naming for parameters.
+        // Prefer using doctorId
         public DoctorForm(int DoctorId)
         {
             InitializeComponent();
-
+            // Review TK: It would be great to have IDoctorRepository fields and use it.
             _currentDoctor = new SqlDoctorRepository(ConnectionString).GetDoctorById(DoctorId);
             RefreshDisplayedInformation();
             ShowRecentProvidedServices();
@@ -47,10 +50,12 @@ namespace Patient_Accounting_System.DesktopUI.Forms
         {
             previousProvidedServicesDataGridView.Columns.Clear();
 
+            // Review TK: Your method depends on details of realization of repository.
             SqlPreviouslyProvidedServiceRepository prev = new SqlPreviouslyProvidedServiceRepository(ConnectionString);
             _recentProvidedServices = prev.GetPreviuoslyProvidedServicesByDoctorId(_currentDoctor.DoctorId).ToList();
             previousProvidedServicesDataGridView.DataSource = _recentProvidedServices;
 
+            // Review TK: This logic could be moved into separated method.
             DataGridViewButtonColumn detailsButton = new DataGridViewButtonColumn();
             detailsButton.UseColumnTextForButtonValue = true;
             detailsButton.Text = "Show details";
@@ -98,6 +103,9 @@ namespace Patient_Accounting_System.DesktopUI.Forms
                 int stringStart = comboBox.SelectionStart;
                 if (stringStart > 0)
                 {
+                    // Review TK: Don't use so much if statement.
+                    // Use ternary operator 
+                    // comboBox.Text = stringStart != 0 ? ... : ....
                     if (stringStart == 0)
                     {
                         comboBox.Text = "";
@@ -114,6 +122,8 @@ namespace Patient_Accounting_System.DesktopUI.Forms
 
         private void comboBox_KeyDown(object sender, KeyEventArgs e)
         {
+            // Review TK: A lot of if statements.
+            // You could just write _needUpdate = e.KeyCode != KeysBack
             if (e.KeyCode == Keys.Back)
             {
                 _needUpdate = false;
@@ -130,6 +140,8 @@ namespace Patient_Accounting_System.DesktopUI.Forms
 
             if (_needUpdate && comboBox.Text.Length > 0)
             {
+                // Review TK: It isn't good to create repository within this method.
+                // Move it into ocnstructor.
                 var sqlDoctorRepository = new SqlDoctorRepository(ConnectionString);
                 var suggestedDoctors = sqlDoctorRepository.SearchDoctorsByName(comboBox.Text).ToList();
 
